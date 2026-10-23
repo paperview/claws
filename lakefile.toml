@@ -1,0 +1,51 @@
+name = "claws"
+defaultTargets = ["Claws"]
+
+[[lean_lib]]
+name = "Claws"
+srcDir = "lean"
+
+[[lean_lib]]
+name = "Clamp"
+srcDir = "examples"
+globs = ["Clamp.+"]
+
+[[lean_lib]]
+name = "Sorting"
+srcDir = "examples"
+globs = ["Sorting.+"]
+
+[[lean_lib]]
+name = "Stats"
+srcDir = "examples"
+globs = ["Stats.+"]
+
+[[lean_lib]]
+name = "Loops"
+srcDir = "examples"
+globs = ["Loops.+"]
+
+[[lean_lib]]
+name = "Bank"
+srcDir = "examples"
+globs = ["Bank.+"]
+
+[[lean_lib]]
+name = "Bits"
+srcDir = "examples"
+globs = ["Bits.+"]
+
+[[lean_lib]]
+name = "Vectors"
+srcDir = "examples"
+globs = ["Vectors.+"]
+
+[[lean_lib]]
+name = "Game"
+srcDir = "examples"
+globs = ["Game.+"]
+
+[[lean_lib]]
+name = "Utf8"
+srcDir = "examples"
+globs = ["Utf8.+"]

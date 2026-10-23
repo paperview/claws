@@ -1,0 +1,22 @@
+The Game example is a port of "Winning Is Impossible", a demo of Bend 2
+(https://github.com/bendlang/bend, demos/app_win_is_bug_2d).
+
+Copyright 2026 HigherOrderCO
+
+Licensed under the Apache License, Version 2.0, the same license as the
+rest of this repository (LICENSE at its root).
+
+Files derived from the demo, and how they differ from it:
+
+  code.hpp    The game, rewritten from Bend into the claws subset of C++.
+              Coordinates are 32-bit unsigned integers instead of
+              natural numbers, and four diagonal moves are added to the
+              demo's four, without cutting corners. The level as text is
+              left out.
+  LAWS.lean   The demo's laws, restated in Lean about the C++ version.
+  PROOF.lean  New proofs in Lean, following the demo's invariant.
+  Code.lean   Generated from code.hpp by claws-lean.
+  Ast.lean    Generated from code.hpp by claws-ast.
+
+main.cpp, a terminal driver that replaces the demo's web front end, and
+Verdict.lean are new.
